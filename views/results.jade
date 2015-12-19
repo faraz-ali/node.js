@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    if orders.length > 0            
+        h2.
+            Orders in mySQL
+        table
+            tr
+                th Order ID
+                th Order Type
+                th Product ID
+                th Order Date
+                th Billing Address
+                th Shipping Address                    
+            each order in orders
+                tr
+                    td=order.order_id
+                    td=order.order_type
+                    td=order.product_id
+                    td=order.order_date
+                    td=order.billing_address
+                    td=order.shipping_address
+    else 
+        h3="No matching orders found in mySQL!"
+    if products.length > 0        
+        h2.
+            Products in MongoDB              
+        table
+            tr
+                th Product ID
+                th Manufacturer
+                th Device
+                th Description
+                th Price
+                th Date Created
+            each product in products
+                tr
+                    td=product.product_id
+                    td=product.manufacturer
+                    td=product.device
+                    td=product.description
+                    td=product.price
+                    td=product.date
+    else 
+        h3="No matching products found in mongoDB!"

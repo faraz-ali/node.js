@@ -1,0 +1,21 @@
+extends layout
+block content
+    script.
+      $(function() {
+        $( "#datepicker" ).datepicker();           
+      });      
+    h1= title
+    form#formAddUser(name="addproduct",method="post",action="/addproduct")        
+        input#datepicker(type='text', placeholder="Date: mm/dd/yy", name="date")
+        input#inputProductId(type="text", placeholder="Product id", name="product_id")
+        input#inputManufacturer(type="text", placeholder="Manufacturer", name="manufacturer")
+        input#inputDevice(type="text", placeholder="Device", name="device")                        
+        input#inputProductDescription(type="text", placeholder="Description in English", name="descriptionEn")                        
+        input#inputProductDescription(type="text", placeholder="Description: 在中國的說明", name="descriptionCn")        
+        select(name='currency')            
+                option(value='$') $ US Dollar
+                option(value='₹') ₹ Indian Rupee
+                option(value='€') € Euro
+                option(value='¥') ¥ Chinese Yen                                
+        input#inputPrice(type="text", placeholder="Price", name="price")       
+        button#btnSubmit(type="submit") submit

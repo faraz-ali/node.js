@@ -1,0 +1,204 @@
+h1 {
+   color: wheat; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 40px; 
+}
+h2 {
+   color: #ffffff; font-family: 'Lato', sans-serif; font-size: 48px; font-weight: 300; line-height: 58px; margin: 0 0 40px; 
+}
+
+h3 {
+   color: steelblue; font-family: 'Lato', sans-serif; font-size: 30px; font-weight: 300; line-height: 58px; margin: 0 0 40px; 
+}
+
+h4 {
+   color: wheat; font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 200; line-height: 58px; margin: 0 0 40px; 
+}
+
+p { 
+  color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0;
+}
+
+a#menu {
+   color: #fe921f; text-decoration: underline;font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 500; line-height: 58px; margin: 0 0 40px;
+}
+
+a:hover {
+   color: #ffffff
+}
+input#datepicker {
+ color: #fe921f; text-decoration: underline; 
+}
+
+.date { background: #fe921f; color: #ffffff;
+   display: inline-block; font-family: 'Lato', sans-serif;
+    font-size: 11px; font-weight: bold; line-height: 12px;
+     letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px;
+      text-transform: uppercase; 
+      }
+      
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #555
+}
+
+.imgs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li#imgs{
+	display: inline-block;
+	vertical-align: middle;
+	width: 21%;
+	margin-left: 4%;
+}
+.imgs li:first-child{
+	margin-left: 0;
+}
+.imgs li p{
+	margin-top: 5px;
+	height: 150px;
+}
+
+video#bgvid {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(polina.jpg) no-repeat;
+background-size: cover;
+}
+table {
+  border: 1px solid #fff;
+  box-shadow: 10px 10px 5px #888888;
+  font-size: 100%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px;
+  margin-bottom: 80px;
+}
+th {
+  border: 1px solid #fff;
+  background: #43D1AF;
+  padding: 20px;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px;
+}
+
+td {
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 20px;
+  font-size: 130%;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  margin: -16px -16px 16px -16px;
+}
+
+form {
+  font: 95% Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 16px;
+  background: #F7F7F7;
+}
+form h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+form input[type="text"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="time"],
+form input[type="url"],
+form textarea,
+form select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="datetime"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form input[type="time"]:focus,
+form input[type="url"]:focus,
+form textarea:focus,
+form select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+form input[type="submit"],
+button {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+
+ul#menu {
+  padding-bottom: 30px;
+  padding-top: 2px;
+  font-family: 'Lato', sans-serif; font-size: 30px; font-weight: 300; line-height: 58px; margin: 0 0 40px;
+}
+li#menu {
+  display: inline;
+  font: 140% Arial, Helvetica, sans-serif;  
+  padding: 16px 16px;  
+}
+
+li#menu a {
+	background: #333;
+	color: #fff;
+	display: inline;
+	padding: 7px 10px;
+	text-decoration: none;
+}
+
+li#menu a:hover {
+	color: darkorange;
+}

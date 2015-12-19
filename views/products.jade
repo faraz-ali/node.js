@@ -1,0 +1,23 @@
+extends layout
+
+block content    
+    h1.
+        Products   
+    table
+        tr
+            th Product Created
+            th Product ID
+            th Manufacturer
+            th Device
+            th Description in English
+            th Description in Chinese
+            th Price            
+        each p in products
+            tr
+                td=p.date
+                td=p.product_id
+                td=p.manufacturer
+                td=p.device
+                td=p.descriptionEn
+                td=p.descriptionCn
+                td=p.price

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formSearch(name="getsearch",method="post",action="/getsearch")
+        input#inputOrderId(type="text", placeholder="Order ID", name="order_id")
+        input#inputProductId(type="text", placeholder="Product ID", name="product_id")
+        button#btnSubmit(type="submit") submit

@@ -1,0 +1,9 @@
+extends layout
+block content
+    h1= title
+    form#formAddUser(name="addorder",method="post",action="/addorder")
+        input#inputOrderType(type="text", placeholder="order type", name="order_type")
+        input#inputProductID(type="text", placeholder="product id", name="product_id")
+        input#inputBilling(type="text", placeholder="Billing Address", name="billing_address")
+        input#inputShipping(type="text", placeholder="Shipping Address", name="shipping_address")
+        button#btnSubmit(type="submit") submit

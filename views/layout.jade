@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title           
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')    
+    |   
+    script(src='//code.jquery.com/jquery-1.10.2.js')
+    |   
+    script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
+      
+  body
+    block video
+      video#bgvid(autoplay='', loop='')
+        source(src='video.webm', type='video/webm')
+        source(src='video.mp4', type='video/mp4')
+
+    block navigate
+          ul#menu
+            li#menu
+              a#menu(href='/') Home
+            li#menu
+              a#menu(href='/products') View Products
+            li#menu
+              a#menu(href='/newproduct') Add New product
+            li#menu
+              a#menu(href='/orders') View Orders
+            li#menu
+              a#menu(href='/neworder') Add New Order
+            li#menu
+              a#menu(href='/search') Search    
+    block content      
