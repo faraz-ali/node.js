@@ -6,8 +6,11 @@ Can store products in MongoDB, and Orders in mySQL. Whean searching and querying
 The Technology stack:
 
 mongoDB (monk)
+
 mySQL
 
 node.js
+
 Express
+
 Jade
